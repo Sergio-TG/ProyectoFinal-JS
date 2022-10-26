@@ -1,0 +1,377 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: lightblue;
+  --key-color: rgb(40, 4, 73);
+  --back-color: black;
+}
+
+body {
+  background-color: rgb(49, 48, 48)
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
+.logo {
+  width: 50%;
+}
+
+header {
+  background-color: rgb(124, 39, 202);
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+  font-family: "Cinzel", sans-serif;
+  font-size: 22px;
+  position: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+div a:hover {
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+  transform: scale(1.0111);
+  color: rgb(145, 224, 70)
+}
+
+p {
+  color: aliceblue
+}
+
+.botones {
+  font-size: 18px;
+  font-family: Cinzel, sans-serif;
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  align-self: center;
+  color: var(--main-color);
+  background-color: var(--back-color);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+}
+
+#boton_carrito {
+  font-size: 18px;
+  font-family: Cinzel, sans-serif;
+  width: 20%;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  align-self: center;
+  color: var(--main-color);
+  background-color: var(--back-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+}
+
+.swal2-popup {
+  color: var(--main-color);
+  background-color: var(--back-color);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+ol,
+ul {
+  padding-left: 0px;
+}
+
+.carousel-inner {
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.carousel-item img {
+  width: auto;
+}
+
+#section-carrito {
+  font-family: Cinzel, sans-serif;
+  font-size: 18px;
+  width: 25%;
+  height: 5%;
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--key-color);
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+}
+
+#section-carrito div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#seleccion {
+  width: 20%;
+  margin: 20px 0px 30px 80px;
+  color: var(--main-color);
+  background-color: var(--back-color);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+}
+
+#container-general {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#section-productos {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.card-product {
+  width: 40%;
+  margin: 20px;
+  text-align: center;
+
+}
+
+.font {
+  font-size: 22px;
+  font-family: Cinzel, sans-serif;
+  color: aliceblue
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.img-container img {
+  width: auto;
+  height: 500px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#container-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#container-general #ordenar-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#container-general #ordenar-modal #seleccion {
+  width: 20%;
+  margin: 20px 0px 30px 80px;
+}
+
+#container-general #ordenar-modal .modal-carrito {
+  width: 15%;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 20px;
+}
+
+#container-general #ordenar-modal .table {
+  text-align: left;
+}
+
+#container-general #ordenar-modal #gastoTotal {
+  font-size: 22px;
+}
+
+#container-general #section-productos {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-radius: 10px;
+
+}
+
+#container-general #section-productos .card-product {
+  width: 30%;
+  margin: 20px;
+  text-align: center;
+
+}
+
+#container-general #section-productos .card-product .img-container {
+  position: relative;
+
+}
+
+#container-general #section-productos .card-product .img-container img {
+  width: auto;
+  height: 500px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#container-general #section-productos .card-product .info-producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+
+#pie {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 39, 202);
+  padding: 10px;
+  font-family: Cinzel, sans-serif;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+  box-shadow: 0px 0px 15px 0px #5a0211;
+}
+
+.pie-text {
+  color: aliceblue
+}
+
+
+/* ----------- SMARTPHONE ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  /*--- GENERAL ---*/
+  header {
+    align-items: flex-end;
+  }
+
+  header nav div a {
+    margin: 5px;
+  }
+
+  /*--- INDEX ---*/
+  .div-cuadros .boxes {
+    width: 55vh;
+  }
+
+  .div-cuadros .boxes h2 {
+    font-size: 1rem;
+  }
+
+  /*--- PRODUCTOS ---*/
+  #container-general #ordenar-modal {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #container-general #ordenar-modal #seleccion {
+    width: 40%;
+    height: 40px;
+    margin: auto;
+  }
+
+  #container-general #ordenar-modal .modal-carrito {
+    width: 45%;
+    margin-top: 30px;
+  }
+
+  #container-general #section-productos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container-general #section-productos .card-product {
+    width: 90%;
+    margin: auto;
+  }
+
+  #container-general #section-productos .card-product .img-container img {
+    margin: 20px 0px;
+    width: 15em;
+  }
+
+  #container-general #section-productos .card-product .info-producto .botones {
+    width: 60%;
+    font-size: .9rem;
+    padding: 2px;
+  }
+
+.swal2-popup {
+    color: var(--main-color);
+    background-color: var(--back-color);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 0px 15px 0px #6b1a64;
+    box-shadow: 0px 0px 15px 0px #5a0211;
+  }
+
+  /*--- CARRITO ---*/
+  .section-carrito {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+
+  .section-carrito .form-carrito {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
+
+  .section-carrito .resumen-carrito {
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+
+  .section-carrito .resumen-carrito table {
+    text-align: center;
+  }
+}
